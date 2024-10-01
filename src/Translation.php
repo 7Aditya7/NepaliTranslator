@@ -1,6 +1,6 @@
 <?php
 
-namespace 7aditya7\NepaliTranslator;
+namespace 7aditya7\nepali-translator;
 
 class Translation
 {

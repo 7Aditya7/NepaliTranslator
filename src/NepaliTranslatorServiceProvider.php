@@ -1,10 +1,10 @@
 <?php
 
-namespace 7aditya7\NepaliTranslator;
+namespace 7aditya7\nepali-translator;
 
 use Illuminate\Support\ServiceProvider;
 
-class NepaliTranslatorServiceProvider extends ServiceProvider
+class nepali-translatorServiceProvider extends ServiceProvider
 {
     public function boot()
     {

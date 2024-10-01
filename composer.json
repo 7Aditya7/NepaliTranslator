@@ -5,16 +5,16 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "7aditya7\\NepaliTranslator\\": "src/",
+            "7aditya7\\nepali-translator\\": "src/",
             "App\\": "app/",
-            "7aditya7\\NepaliTranslator\\": "packages/YourName/NepaliTranslator/src"
+            "7aditya7\\nepali-translator\\": "packages/YourName/nepali-translator/src"
         
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "7aditya7\\NepaliTranslator\\NepaliTranslatorServiceProvider"
+                "7aditya7\\nepali-translator\\nepali-translatorServiceProvider"
             ]
         }
     },
