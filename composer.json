@@ -1,20 +1,20 @@
 {
-    "name": "Aditya/nepali-translator",
+    "name": "7aditya7/nepali-translator",
     "description": "A package to translate English to Nepali",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Aditya\\NepaliTranslator\\": "src/",
+            "7aditya7\\NepaliTranslator\\": "src/",
             "App\\": "app/",
-            "Aditya\\NepaliTranslator\\": "packages/YourName/NepaliTranslator/src"
+            "7aditya7\\NepaliTranslator\\": "packages/YourName/NepaliTranslator/src"
         
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Aditya\\NepaliTranslator\\NepaliTranslatorServiceProvider"
+                "7aditya7\\NepaliTranslator\\NepaliTranslatorServiceProvider"
             ]
         }
     },
