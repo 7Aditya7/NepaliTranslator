@@ -1,0 +1,22 @@
+{
+    "name": "Aditya/nepali-translator",
+    "description": "A package to translate English to Nepali",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aditya\\NepaliTranslator\\": "src/",
+            "App\\": "app/",
+            "Aditya\\NepaliTranslator\\": "packages/YourName/NepaliTranslator/src"
+        
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aditya\\NepaliTranslator\\NepaliTranslatorServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
