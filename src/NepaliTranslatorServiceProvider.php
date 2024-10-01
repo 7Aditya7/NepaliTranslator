@@ -21,6 +21,7 @@ class NepaliTranslatorServiceProvider extends ServiceProvider
             'nepali_translator'
         );
 
+        // Register the NepaliTranslator singleton
         $this->app->singleton('NepaliTranslator', function () {
             return new Translation();
         });

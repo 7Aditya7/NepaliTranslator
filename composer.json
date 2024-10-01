@@ -12,11 +12,14 @@
         "laravel": {
             "providers": [
                 "Aditya7\\NepaliTranslator\\NepaliTranslatorServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "NepaliTranslator": "Aditya7\\NepaliTranslator\\Facades\\NepaliTranslator"
+            }
         }
     },
     "require": {
-        "php":"^8.0"
+        "php": "^7.4 || ^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0"
