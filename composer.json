@@ -5,18 +5,17 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "7aditya7\\nepali-translator\\": "src/",
-            "App\\": "app/",
-            "7aditya7\\nepali-translator\\": "packages/YourName/nepali-translator/src"
-        
+            "Aditya7\\NepaliTranslator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "7aditya7\\nepali-translator\\nepali-translatorServiceProvider"
+                "7aditya7\\NepaliTranslator\\NepaliTranslatorServiceProvider"
             ]
         }
     },
-    "require": {}
+    "require": {
+        "phpunit/phpunit": "^9.0"
+    }
 }

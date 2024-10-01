@@ -1,10 +1,10 @@
 <?php
 
-namespace 7aditya7\nepali-translator;
+namespace Aditya7\NepaliTranslator;
 
 use Illuminate\Support\ServiceProvider;
 
-class nepali-translatorServiceProvider extends ServiceProvider
+class NepaliTranslatorServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -21,7 +21,7 @@ class nepali-translatorServiceProvider extends ServiceProvider
             'nepali_translator'
         );
 
-        $this->app->singleton('nepali-translator', function () {
+        $this->app->singleton('NepaliTranslator', function () {
             return new Translation();
         });
     }
