@@ -1,6 +1,6 @@
 <?php
 
-namespace 7aditya7\nepali-translator;
+namespace Aditya7\NepaliTranslator;
 
 class Translation
 {
@@ -8,7 +8,6 @@ class Translation
 
     public function __construct()
     {
-        // Load your dictionary from the config
         $this->dictionary = config('nepali_translator.dictionary', []);
     }
 

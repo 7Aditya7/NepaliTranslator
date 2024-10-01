@@ -1,6 +1,6 @@
 <?php
 
-namespace 7aditya7\NepaliTranslator;
+namespace Aditya7\NepaliTranslator;
 
 use PHPUnit\Framework\TestCase;
 use YourName\NepaliTranslator\Translation;
