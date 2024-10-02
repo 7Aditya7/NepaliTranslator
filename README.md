@@ -50,7 +50,7 @@ You can fine-tune additional settings, such as timeouts and caching, in the conf
 Using the **Nepali Translator** is incredibly simple! Just call the Facade to translate any string.
 
 ```php
-use NepaliTranslator;
+use Aditya7\NepaliTranslator\Facades\NepaliTranslator;
 
 $translatedText = NepaliTranslator::translate('Hello. My name is Aditya.');
 echo $translatedText; // Output: हेलो. मेरो नाम आदित्य हो।
