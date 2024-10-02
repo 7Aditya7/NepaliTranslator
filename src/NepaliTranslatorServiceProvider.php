@@ -21,7 +21,7 @@ class NepaliTranslatorServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/nepalitranslator.php' => config_path('nepalitranslator.php'),
+            __DIR__ . '/../config/nepalitranslator.php' => config_path('nepalitranslator.php'),
         ], 'config');
     }
 }
