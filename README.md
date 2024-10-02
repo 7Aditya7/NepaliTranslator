@@ -32,12 +32,16 @@ This will create a `nepalitranslator.php` configuration file in your `config` di
 
 ### Step 3: Add API Credentials
 
-Configure the API endpoint and key in your `.env` file:
+To use the **Nepali Translator** package, you'll need to create an API key from the Groq platform.
+
+1. Visit [Groq Console](https://console.groq.com/keys).
+2. On the left-hand section, navigate to **API Keys**.
+3. Create a new API key and copy it.
+4. Add the key to your `.env` file as follows:
 
 ```env
-NEPALI_TRANSLATOR_API_ENDPOINT=https://api.groq.com/translate
 NEPALI_TRANSLATOR_API_KEY=your_api_key_here
-```
+
 
 You can fine-tune additional settings, such as timeouts and caching, in the configuration file.
 
@@ -66,26 +70,8 @@ php artisan cache:clear
 
 This will reset the cache, and the next request will pull fresh translations from the API.
 
-## Advanced Configuration
 
-The package allows you to fully customize its behavior via the `config/nepalitranslator.php` file.
-
-- **Cache Duration**: Control how long translations stay cached (default is 24 hours).
-- **Timeouts**: Set a maximum timeout for the API requests.
-- **API Settings**: Configure your API keys, endpoint, and more.
-
-Here’s a snippet of what you can configure:
-
-```php
-return [
-    'api_endpoint' => env('NEPALI_TRANSLATOR_API_ENDPOINT', 'https://api.groq.com/translate'),
-    'api_key' => env('NEPALI_TRANSLATOR_API_KEY'),
-    'cache_duration' => env('NEPALI_TRANSLATOR_CACHE_DURATION', 1440), // Cache for 24 hours
-    'timeout' => 5, // Timeout after 5 seconds
-];
-```
-
-## Error Handling Like Never Before
+## Error Handling 
 
 **Nepali Translator** includes robust error handling. If anything goes wrong with the API, whether it’s a timeout or a network issue, the package automatically returns the original English text. This ensures your application **never breaks** due to a failed translation.
 
@@ -118,11 +104,6 @@ Here’s why **Nepali Translator** stands out:
 
 ## Testing
 
-Ensure your implementation works perfectly with our included tests:
-
-```bash
-vendor/bin/phpunit
-```
 
 We take testing seriously so that you can trust this package in production environments.
 

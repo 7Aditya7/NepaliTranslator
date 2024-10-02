@@ -15,7 +15,7 @@ class Translation
     public function __construct(ClientInterface $client)
     {
         $this->client = $client;
-        $this->apiEndpoint = config('nepalitranslator.api_endpoint');
+        $this->apiEndpoint = 'https://api.groq.com/openai/v1/chat/completions';
         $this->apiKey = config('nepalitranslator.api_key');
     }
 
