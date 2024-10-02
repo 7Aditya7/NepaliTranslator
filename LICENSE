@@ -1,0 +1,26 @@
+---
+
+### **8. Additional Enhancements**
+
+#### **Performance Optimization**
+
+- **Batch Processing:** Implement methods to handle multiple translations in a single API call.
+- **Queueing:** For high-volume translation tasks, consider dispatching jobs to Laravel's queue system.
+
+#### **Error Handling**
+
+- **Custom Exceptions:** Create custom exceptions for more granular error handling.
+
+**Example:**
+
+```php
+<?php
+
+namespace Aditya7\NepaliTranslator\Exceptions;
+
+use Exception;
+
+class TranslationException extends Exception
+{
+    //
+}

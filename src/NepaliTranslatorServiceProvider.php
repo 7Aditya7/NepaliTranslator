@@ -3,27 +3,25 @@
 namespace Aditya7\NepaliTranslator;
 
 use Illuminate\Support\ServiceProvider;
+use GuzzleHttp\Client;
 
 class NepaliTranslatorServiceProvider extends ServiceProvider
 {
-    public function boot()
-    {
-        // Publish configuration
-        $this->publishes([
-            __DIR__ . '/../config/nepali_translator.php' => config_path('nepali_translator.php'),
-        ], 'config');
-    }
-
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__ . '/../config/nepali_translator.php',
-            'nepali_translator'
-        );
+        // Merge package configuration with the application's copy
+        $this->mergeConfigFrom(__DIR__ . '/../config/nepalitranslator.php', 'nepalitranslator');
 
-        // Register the NepaliTranslator singleton
-        $this->app->singleton('NepaliTranslator', function () {
-            return new Translation();
+        // Bind the Translation class to the service container
+        $this->app->singleton('nepalitranslator', function ($app) {
+            return new Translation(new Client());
         });
+    }
+
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../../config/nepalitranslator.php' => config_path('nepalitranslator.php'),
+        ], 'config');
     }
 }

@@ -8,6 +8,6 @@ class NepaliTranslator extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'NepaliTranslator';
+        return 'nepalitranslator';
     }
 }

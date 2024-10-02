@@ -6,8 +6,12 @@
     "autoload": {
         "psr-4": {
             "Aditya7\\NepaliTranslator\\": "src/"
-        }
+        },
+        "classmap": [
+            "config/"
+        ]
     },
+    
     "extra": {
         "laravel": {
             "providers": [
@@ -19,7 +23,8 @@
         }
     },
     "require": {
-        "php": "^7.4 || ^8.0"
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.0" 
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0"
