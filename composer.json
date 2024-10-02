@@ -1,6 +1,6 @@
 {
     "name": "7aditya7/nepali-translator",
-    "description": "A package to translate English to Nepali",
+    "description": "Nepali Translator - AI-Powered English to Nepali Translation",
     "type": "library",
     "license": "MIT",
     "autoload": {
